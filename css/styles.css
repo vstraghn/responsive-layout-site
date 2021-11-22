@@ -1,0 +1,274 @@
+/* ================================= 
+  Base Element Styles
+==================================== */
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Work Sans', sans-serif;
+    background-color: #f8f8f8;
+	color: #505050;
+	margin: 0;
+    text-align: center;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+ul li {
+    margin-bottom: 5px;
+    background-color: #ffffff;
+    padding: .5rem;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+a {
+    text-decoration: none;
+    color: #505050;
+}
+
+.profile-img {
+    padding: 0 2rem;
+}
+
+.profile {
+    padding: 2rem 1rem;
+}
+
+img {
+    max-width: 100%;
+}
+
+h2 {
+    font-weight: 400;
+}
+
+a span {
+    color: #838383;
+    font-weight: 100;
+}
+
+.footer-inner a {
+    text-decoration: none;
+    color: #838383;
+}
+
+/* ================================= 
+  Base Layout Styles
+==================================== */
+
+/* ---- Navigation ---- */
+
+.main-header {
+    padding: 2vh 1rem;
+}
+
+.anchors {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-top: 1rem;
+}
+
+.footer-nav {
+    font-size: .95rem;
+}
+
+.footer-nav li {
+    display: none;
+}
+
+.footer-nav li:last-child {
+    display: initial;
+    padding: 0;
+    margin: 0;
+    background-color: initial;
+}
+
+/* ---- Layout Containers ---- */
+
+.summary {
+    color: #838383;
+    font-weight: 100;
+}
+
+#portfolio {
+    padding-top: 2rem;
+    background-color: #ffffff;
+}
+
+.projects {
+    padding: 1rem;
+}
+
+.project-header {
+    text-transform: uppercase;
+}
+
+.description {
+    margin: 1rem auto 3rem;
+}
+
+footer {
+    padding: 4vh 1rem;
+}
+
+.contact-title {
+    text-transform: uppercase;
+}
+
+.footer-inner {
+    border-bottom: 1px solid #d6d6d6;
+    padding-bottom: 3rem;
+}
+
+.main-footer p {
+    color: #838383;
+    font-weight: 100;
+}
+
+.main-footer span {
+    font-weight: 600;
+}
+
+
+/* ================================= 
+  Media Queries
+==================================== */
+
+@media (min-width: 768px) {
+
+    .main-header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 3vh 2rem;
+    }
+
+    .main-nav {
+        display: flex;
+        margin-top: 1rem;
+    }
+
+    ul li {
+        background-color: initial;
+        padding: 1rem;
+        margin-bottom: initial;
+    }
+
+    .name {
+        margin: 0;
+    }
+
+    .profile {
+        display: flex;
+        flex-direction: row-reverse;
+        padding: 2rem 1.5rem;
+    }
+
+    .profile-img {
+        padding: 0 ;
+    }
+
+    .summary {
+        flex-shrink: 4;
+    }
+
+    .summary p {
+        text-align: start;
+        margin: 0;
+        padding-right: 1rem;
+    }
+
+    .projects {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 1rem;
+    }
+
+    .column {
+        flex: 1 50%;
+        padding: 0 0.5rem;
+    }
+
+    .column p {
+        padding: 0 1.5rem;
+        font-weight: lighter;
+    }
+
+    footer {
+        padding: 4vh 2rem;
+    }
+
+    .footer-nav li {
+        display: block;
+    }
+
+    .footer-nav {
+        display: flex;
+    }
+
+    .footer-nav li:last-child {
+        display: none;
+    }
+
+    .footer-inner p {
+        max-width: 65%;
+        margin: 1rem auto;
+    }
+	
+}
+
+@media (min-width: 1024px) {
+    .main-header {
+        flex-direction: row;
+        padding: 3vh 2.5rem;
+    }
+
+    header {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .profile-img {
+        display: flex;
+        padding-right: 1.5rem;
+    }
+
+    .summary {
+        flex: 1.5;
+        padding-left: .75rem;
+    }
+
+    .summary p {
+        margin: 0 .5rem;
+    }
+
+    /*.profile {
+        padding: 2rem 1.5rem;
+    }*/
+
+    .column {
+        flex: 1 33%;
+        padding: 0 0.5rem;
+    }
+
+    #portfolio {
+        width: 95%;
+        margin: auto;
+    }
+
+    .footer-inner p {
+        max-width: 50%;
+        margin: 1rem auto;
+    }
+	
+
+}
