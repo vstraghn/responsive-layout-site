@@ -35,6 +35,8 @@ a {
 
 .profile-img {
     padding: 0 2rem;
+    max-width: 365px;
+    margin: 0 auto;
 }
 
 .profile {
